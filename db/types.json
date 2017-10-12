@@ -1,0 +1,40 @@
+{
+    "types": [
+        {
+            "id": 0,
+            "category": 0,
+            "name": "personal",
+            "description": "Gunpowder intended for home protection or hunting"
+        },
+        {
+            "id": 0,
+            "category": 0,
+            "name": "professional",
+            "description": "Gunpowder intended for hired hitmen"
+        },
+        {
+            "id": 0,
+            "category": 0,
+            "name": "military",
+            "description": "Gunpowder intended for the armed forces"
+        },
+        {
+            "id": 1,
+            "category": 1,
+            "name": "personal",
+            "description": "Nitroglycerine intended for accidentally blowing up your house"
+        },
+        {
+            "id": 1,
+            "category": 1,
+            "name": "professional",
+            "description": "Nitroglycerine intended for hired hitmen, looking to blow up someone's house"
+        },
+        {
+            "id": 1,
+            "category": 1,
+            "name": "military",
+            "description": "Nitroglycerine intended for the armed forces, so they can blow up bad guy's houses"
+        }
+    ]
+}

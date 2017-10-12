@@ -1,0 +1,147 @@
+{
+    "products": [{
+        "wet_powder": {
+            "id": 0,
+            "type": 0,
+            "name": "Wet Powder",
+            "description": "This gunpowder is useless."
+        }
+    },
+    {
+        "black_powder": {
+            "id": 0,
+            "type": 0,
+            "name": "Black Powder",
+            "description": "This gunpowder is black."
+        }
+    },
+    {
+        "potassium_nitrate": {
+            "id": 0,
+            "type": 0,
+            "name": "Potassium Nitrate",
+            "description": "Extracted from manure."
+        }
+    },
+    {
+        "smokeless": {
+            "id": 0,
+            "type": 0,
+            "name": "Smokeless",
+            "description": "Not explosive."
+        }
+    },
+    {
+        "fifth_powder": {
+            "id": 0,
+            "type": 0,
+            "name": "Fifth Powder",
+            "description": "Fifth Powder."
+        }
+    },
+    {
+        "sixth_powder": {
+            "id": 0,
+            "type": 0,
+            "name": "Sixth Powder",
+            "description": "Sixth Powder."
+        }
+    },
+    {
+        "seventh_powder": {
+            "id": 0,
+            "type": 0,
+            "name": "Seventh Powder",
+            "description": "Seventh Powder."
+        }
+    },
+    {
+        "eighth_powder": {
+            "id": 0,
+            "type": 0,
+            "name": "Eighth Powder",
+            "description": "Eighth Powder."
+        }
+    },
+    {
+        "ninth_powder": {
+            "id": 0,
+            "type": 0,
+            "name": "Ninth Powder",
+            "description": "Ninth Powder."
+        }
+    },
+    {
+        "first_nitro": {
+            "id": 1,
+            "type": 1,
+            "name": "First Nitro",
+            "description": "First Nitro."
+        }
+    },
+    {
+        "second_nitro": {
+            "id": 1,
+            "type": 1,
+            "name": "Second Nitro",
+            "description": "Second Nitro."
+        }
+    },
+    {
+        "third_nitro": {
+            "id": 1,
+            "type": 1,
+            "name": "Third Nitro",
+            "description": "Third Nitro."
+        }
+    },
+    {
+        "fourth_nitro": {
+            "id": 1,
+            "type": 1,
+            "name": "Fourth Nitro",
+            "description": "Fourth Nitro."
+        }
+    },
+    {
+        "fifth_nitro": {
+            "id": 1,
+            "type": 1,
+            "name": "Fifth Nitro",
+            "description": "Fifth Nitro."
+        }
+    },
+    {
+        "sixth_nitro": {
+            "id": 1,
+            "type": 1,
+            "name": "Sixth Nitro",
+            "description": "Sixth Nitro."
+        }
+    },
+    {
+        "seventh_nitro": {
+            "id": 1,
+            "type": 1,
+            "name": "Seventh Nitro",
+            "description": "Seventh Nitro."
+        }
+    },
+    {
+        "eighth_nitro": {
+            "id": 1,
+            "type": 1,
+            "name": "Eighth Nitro",
+            "description": "Eighth Nitro."
+        }
+    },
+    {
+        "ninth_nitro": {
+            "id": 1,
+            "type": 1,
+            "name": "Ninth Nitro",
+            "description": "Ninth Nitro."
+        }
+    }
+	]
+}
