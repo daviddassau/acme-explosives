@@ -2,6 +2,8 @@
 "use strict";
 
 let explosives = [];
+let categories = [];
+let types = [];
 
 const categoriesJSON = () => {
 	return new Promise((resolve, reject) => {
@@ -37,16 +39,34 @@ const productsJSON = () => {
 const explosivesGetter = () => {
 	categoriesJSON().then((results1) => {
 		results1.forEach((splodie) => {
-			explosives.push(splodie);
+			categories.push(splodie);
 		});
 		return typesJSON();
 	}).then((results2) => {
 		results2.forEach((splodie) => {
-			explosives.push(splodie);
+			categories.forEach((category) => {
+				if (splodie.category === category.id){
+					splodie.categoryId = category.id;
+					splodie.categoryName = category.name;
+				}
+			});
+			types.push(splodie);
+			console.log(types);
 		});
 		return productsJSON();
 	}).then((results3) => {
 		results3.forEach((splodie) => {
+			// explosives.push(splodie);
+			let key = Object.keys(splodie)[0];
+			splodie = splodie[key];
+			types.forEach((type) => {
+				if (splodie.type === type.id){
+					splodie.typeName = type.name;
+					splodie.typeDescription = type.description;
+					splodie.categoryId = type.categoryId;
+					splodie.categoryName = type.categoryName;
+				}
+			});
 			explosives.push(splodie);
 		});
 		console.log("explosives", explosives);
