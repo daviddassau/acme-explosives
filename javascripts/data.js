@@ -50,12 +50,10 @@ const explosivesGetter = () => {
 				}
 			});
 			types.push(splodie);
-			console.log(types);
 		});
 		return productsJSON();
 	}).then((results3) => {
 		results3.forEach((splodie) => {
-			// explosives.push(splodie);
 			let key = Object.keys(splodie)[0];
 			splodie = splodie[key];
 			types.forEach((type) => {
@@ -82,65 +80,5 @@ const getExplosives = () => {
 
 
 module.exports = {initializer, getExplosives};
-
-
-
-
-
-// 3rd one we did: best way to do it for order dependent data load (dino data is independent of each other and doesn't require this method)
-// let dinoGetter = () => {
-//     firstDinosaurJSON().then(function(results1){
-//         results1.forEach(function(dino){
-//             dinosaurs.push(dino);
-//         });
-//         return secondDinosaurJSON();
-//     }).then(function(results2){
-//         results2.forEach(function(dino) {
-//                 dinosaurs.push(dino);
-//         });
-//         return thirdDinosaurJSON();
-//     }).then(function(results3){
-//         results3.forEach(function(dino) {
-//             dinosaurs.push(dino);
-//         });
-//         console.log("dinosaurs", dinosaurs);
-//         makeDinos();
-//     });
-// };
-
-// let makeDinos = () => {
-//     dinosaurs.forEach(function(dino){
-//         dom(dino);
-//     });
-// };
-
-
-
-
-
-// const dinoGetter = () => {
-// 	Promise.all([firstDinosaurJSON(), secondDinosaurJSON(), thirdDinosaurJSON()]).then((results) => {
-// 		allTheCats().then((cats) => {
-// 		results.forEach((result) => {
-// 			result.forEach((dino) => {
-// 				dino.snacks = [];
-// 				dino.catIds.forEach((catId) => {
-// 					cats.forEach((cat) => {
-// 						if(cat.id === catId){
-// 							dino.snacks.push(cat);
-// 						}
-// 					});
-// 				});
-// 				dinosaurs.push(dino);
-// 			});
-// 		  });
-// 		makeDinos();
-// 		});
-// 		console.log("dino", dinosaurs);
-// 	}).catch((error) => {
-// 		console.log("error from Promise.all", error);
-// 	});
-// };
-
 
 

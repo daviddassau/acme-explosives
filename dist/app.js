@@ -51,12 +51,10 @@ const explosivesGetter = () => {
 				}
 			});
 			types.push(splodie);
-			console.log(types);
 		});
 		return productsJSON();
 	}).then((results3) => {
 		results3.forEach((splodie) => {
-			// explosives.push(splodie);
 			let key = Object.keys(splodie)[0];
 			splodie = splodie[key];
 			types.forEach((type) => {
@@ -86,72 +84,66 @@ module.exports = {initializer, getExplosives};
 
 
 
-
-
-// 3rd one we did: best way to do it for order dependent data load (dino data is independent of each other and doesn't require this method)
-// let dinoGetter = () => {
-//     firstDinosaurJSON().then(function(results1){
-//         results1.forEach(function(dino){
-//             dinosaurs.push(dino);
-//         });
-//         return secondDinosaurJSON();
-//     }).then(function(results2){
-//         results2.forEach(function(dino) {
-//                 dinosaurs.push(dino);
-//         });
-//         return thirdDinosaurJSON();
-//     }).then(function(results3){
-//         results3.forEach(function(dino) {
-//             dinosaurs.push(dino);
-//         });
-//         console.log("dinosaurs", dinosaurs);
-//         makeDinos();
-//     });
-// };
-
-// let makeDinos = () => {
-//     dinosaurs.forEach(function(dino){
-//         dom(dino);
-//     });
-// };
-
-
-
-
-
-// const dinoGetter = () => {
-// 	Promise.all([firstDinosaurJSON(), secondDinosaurJSON(), thirdDinosaurJSON()]).then((results) => {
-// 		allTheCats().then((cats) => {
-// 		results.forEach((result) => {
-// 			result.forEach((dino) => {
-// 				dino.snacks = [];
-// 				dino.catIds.forEach((catId) => {
-// 					cats.forEach((cat) => {
-// 						if(cat.id === catId){
-// 							dino.snacks.push(cat);
-// 						}
-// 					});
-// 				});
-// 				dinosaurs.push(dino);
-// 			});
-// 		  });
-// 		makeDinos();
-// 		});
-// 		console.log("dino", dinosaurs);
-// 	}).catch((error) => {
-// 		console.log("error from Promise.all", error);
-// 	});
-// };
-
-
-
-
 },{}],2:[function(require,module,exports){
 "use strict";
 
+let getExplosives = require('./data');
+
+let outputDiv = $('#explosives');
+
+// Printing the Gunpowder category
+const domStringGunpowder = (e) => {
+	let domStrang = '';
+	let data = getExplosives.getExplosives();
+	data.forEach((item) => {
+		console.log('item', item.categoryName);
+		console.log(e.target.innerHTML);
+		if(e.target.innerHTML === item.categoryName){
+			domStrang += `<div class="col-md-4">`;
+			domStrang +=   `<p>${item.name}</p>`;
+			domStrang +=   `<p>${item.description}</p>`;
+			domStrang += `</div>`;
+		}
+	});
+	printToDomGunpowder(domStrang);
+};
+
+// Print to Dom function Gunpowder
+const printToDomGunpowder = (strang) => {
+	outputDiv.append(strang);
+};
+
+
+
+
+
+// Module Export
+module.exports = domStringGunpowder;
+
+
+
+
+
+},{"./data":1}],3:[function(require,module,exports){
+"use strict";
+
+var dom = require('./dom');
+
+$('#gunpowderSelector').click((e) => {
+	// Run domStringGunpowder from dom.js
+	// console.log(e.target);
+	dom(e);
+});
+
+
+module.exports = {};
+},{"./dom":2}],4:[function(require,module,exports){
+"use strict";
+
 var data = require('./data');
+require('./events');
 
 $(document).ready(function() {
 	data.initializer();
 });
-},{"./data":1}]},{},[2]);
+},{"./data":1,"./events":3}]},{},[4]);
