@@ -13,8 +13,12 @@ const domStringGunpowder = (e) => {
 		console.log(e.target.innerHTML);
 		if(e.target.innerHTML === item.categoryName){
 			domStrang += `<div class="col-md-4">`;
-			domStrang +=   `<p>${item.name}</p>`;
-			domStrang +=   `<p>${item.description}</p>`;
+			domStrang +=   `<div class="thumbnail">`;
+			domStrang +=     `<h4>${item.name}</h4>`;
+			domStrang +=     `<p>${item.description}</p>`;
+			domStrang +=     `<p><b>Uses:</b><br />${item.typeDescription}</p>`;
+			domStrang +=     `<p>${item.typeName}</p>`;
+			domStrang +=   `</div>`;
 			domStrang += `</div>`;
 		}
 	});
@@ -32,7 +36,4 @@ const printToDomGunpowder = (strang) => {
 
 // Module Export
 module.exports = domStringGunpowder;
-
-
-
 

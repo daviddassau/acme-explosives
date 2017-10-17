@@ -76,47 +76,47 @@
             "id": 9,
             "type": 3,
             "name": "First Nitro",
-            "description": "First Nitro."
+            "description": "First Nitro Description."
         }
     },
     {
         "second_nitro": {
             "id": 10,
             "type": 3,
-            "name": "Second Nitro",
-            "description": "Second Nitro."
+            "name": "Trinitroglycerin",
+            "description": "Trinitroglycerin Description."
         }
     },
     {
         "third_nitro": {
             "id": 11,
             "type": 3,
-            "name": "Third Nitro",
-            "description": "Third Nitro."
+            "name": "Trinitroglycerine Nitro",
+            "description": "Trinitroglycerine Description."
         }
     },
     {
         "fourth_nitro": {
             "id": 12,
             "type": 4,
-            "name": "Fourth Nitro",
-            "description": "Fourth Nitro."
+            "name": "Nitro",
+            "description": "Nitro Description."
         }
     },
     {
         "fifth_nitro": {
             "id": 13,
             "type": 4,
-            "name": "Fifth Nitro",
-            "description": "Fifth Nitro."
+            "name": "Glyceryl Trinitrate",
+            "description": "Glyceryl Trinitrate Description."
         }
     },
     {
         "sixth_nitro": {
             "id": 14,
             "type": 4,
-            "name": "Sixth Nitro",
-            "description": "Sixth Nitro."
+            "name": "Trinitroxypropane",
+            "description": "Trinitroxypropane Description."
         }
     },
     {
@@ -124,7 +124,7 @@
             "id": 15,
             "type": 5,
             "name": "Seventh Nitro",
-            "description": "Seventh Nitro."
+            "description": "Seventh Nitro Description."
         }
     },
     {
@@ -132,7 +132,7 @@
             "id": 16,
             "type": 5,
             "name": "Eighth Nitro",
-            "description": "Eighth Nitro."
+            "description": "Eighth Nitro Description."
         }
     },
     {
@@ -140,7 +140,7 @@
             "id": 17,
             "type": 5,
             "name": "Ninth Nitro",
-            "description": "Ninth Nitro."
+            "description": "Ninth Nitro Description."
         }
     }
 	]
