@@ -1,0 +1,9 @@
+body {
+	background-color: gray;
+	text-align: center;
+	background: url('http://shourtline.swl4.com/image/LGB_94108_Looney-Tunes_ACME-Explosive-Dynamite-Car/LGB_94108_Looney-Tunes_ACME-Explosive-Dynamite-Car_rt-side_1280.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
